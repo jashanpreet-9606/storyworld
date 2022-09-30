@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STORYWORLD</title>
+  <style>
+   
+   .padding{
+    padding-right: 20px;
+   }
+
+    .dec {
+      font-size: 50px;
+      font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    .wrapper {
+      max-height: 350px;
+      /* border:1px solid red; */
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .wrapper::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .wrapper.item {
+      min-width: 300px;
+      height: 300px;
+      line-height: 110px;
+      text-align: center;
+      background-color: blue;
+    }
+    .container {
+  position: absolute;
+  text-align: center;
+ 
+  top:3000px;
+  left: 100px;
+  
+  /* background-image: linear-gradient(to right,black,grey); */
+  background-image: url('https://wallpapersmug.com/download/2880x1800/b77e70/blur-texture-misted-dark.jpg') ;
+  width:100%;
+  height: 800px;
+ 
+  
+
+ 
+}
+    .top-left {
+  position: absolute;
+  top: 130px;
+  left: 280px;
+  text-align: justify;
+  font-weight: 20px;
+}
+.foot{
+  position: absolute;
+   top:3950px;
+   background-color:grey;
+   height: 400px;
+   width: 100%;
+   display: flex;
+   
+}
+.hov:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  
+  
+}
+.oo:hover{
+ color: brown;
+}
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b>CLOSET</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" class="padding">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home1.html" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#authors" >Authors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#genres" >Genres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#aboutus" >About us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousal -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="height:400px; width:1536px">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/1450x400//?books,dark" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to your StoryWorld!</h5>
+          <p>Warehouse of world's finest Minds</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1450x400//?library" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to your StoryWorld!</h5>
+          <p>Warehouse of world's finest Minds</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1450x400//?reading" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to your StoryWorld!</h5>
+          <p>Warehouse of world's finest Minds</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <br>
+  <!-- top 10 -->
+  <div class="dec">
+    <h1 >Top 10 Books Around The Globe</h1>
+  </div>
+  <div class="wrapper">
+    <img src="book1.jpeg" alt="books" height="300px" width="300px">
+    <img src="book2.jpeg" alt="books" height="300px" width="300px">
+    <img src="book3.jpeg" alt="books" height="300px" width="300px">
+    <img src="book4.jpeg" alt="books" height="300px" width="300px">
+    <img src="book5.jpeg" alt="books" height="300px" width="300px">
+    <img src="book6.jpeg" alt="books" height="300px" width="300px">
+    <img src="book7.jpeg" alt="books" height="300px" width="300px">
+    <img src="book8.jpeg" alt="books" height="300px" width="300px">
+    <img src="book9.jpeg" alt="books" height="300px" width="300px">
+    <img src="book10.jpeg" alt="books" height="300px" width="300px">
+
+  </div>
+
+  <!-- authors -->
+  <h1 style="font-size: 50px;font-family: 'Times New Roman', Times, serif;">Best Selling Authors</h1>
+  <br></br>
+  <div class="card" style="width: 18rem; position: absolute; left:20px;" id="authors">
+    <img src="author1.jpeg" class="card-img-top" alt="book" height="350px" width="450px">
+    <div class="card-body">
+      <p class="card-text"><b>Chetan Bhagat </b>(born 22 April 1974) is an Indian author, columnist and youtuber. He was included in Time magazine's list of World's 100 Most Influential People in 2010.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; position: absolute; left:320px;">
+    <img src="author2.jpeg" class="card-img-top" alt="book" height="350px" width="450px">
+    <div class="card-body">
+      <p class="card-text"><b>Stephen Edwin King</b> (born September 21, 1947) is an American author of horror, supernatural fiction, suspense, crime, science-fiction, and fantasy novels."</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; position: absolute; left:620px;">
+    <img src="author3.jpeg" class="card-img-top" alt="book" height="350px" width="450px">
+    <div class="card-body">
+      <p class="card-text"><b>Joanne Rowling CH OBE FRSL</b> ( born 31 July 1965), also known by her pen name J. K. Rowling, is a British author and philanthropist. She wrote Harry Potter.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; position: absolute; left:920px;">
+    <img src="author4.jpeg" class="card-img-top" alt="book" height="350px" width="450px">
+    <div class="card-body">
+      <p class="card-text"><b>Shashi Tharoor, </b>(born March 9, 1956, London, England), prominent Indian diplomat and politician. He is also a highly regarded author of both nonfiction and fiction books.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; position: absolute; left:1220px;">
+    <img src="author5.jpeg" class="card-img-top" alt="book" height="350px" width="450px">
+    <div class="card-body">
+      <p class="card-text"><b>Paulo Coelho de Souza </b>(born 24 August 1947) is a Brazilian lyricist and novelist and a member of the Brazilian Academy of Letters since 2002.</p>
+    </div>
+  </div>
+ 
+  <div class="card" style="width: 18rem; position: absolute; left:20px;top: 1500px;">
+    <img src="author6.jpeg" class="card-img-top" alt="book" height="350px" width="450px">
+    <div class="card-body">
+      <p class="card-text"><b>Rupi Kaur</b> (born 4 October 1992) is a Canadian poet, illustrator, photographer, and author. Born in Punjab, India, Kaur emigrated to Canada at a young age. </p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; position: absolute; left:320px; top: 1500px;">
+    <img src="author7.jpeg" class="card-img-top" alt="book" height="350px" width="450px">
+    <div class="card-body">
+      <p class="card-text"><b>Sudha Murty</b> (born 19 August 1950), occasionally spelled in media as Sudha Murthy, is an Indian educator, author and philanthropist.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; position: absolute; left:620px; top: 1500px;">
+    <img src="author8.jpeg" class="card-img-top" alt="book" height="350px" width="450px">
+    <div class="card-body">
+      <p class="card-text"><b>William Shakespeare </b>( 26 April1564 - 23 April 1616) was an English playwright, poet and actor. He is widely regarded as the greatest writer in the English.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; position: absolute; left:920px;  top: 1500px;">
+    <img src="https://baconfreelibrary.org/wp-content/uploads/2016/08/nora-roberts.jpg" class="card-img-top" alt="book" height="350px" width="450px">
+    <div class="card-body">
+      <p class="card-text"><b>Nora Roberts</b> (born Eleanor Marie Robertson on October 10, 1950) is an American author of more than 225 romance novels. She writes as J. D. Robb for the in Death series .</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; position: absolute; left:1220px;  top: 1500px;">
+    <img src="https://pbs.twimg.com/profile_images/1198984823479701505/wEfCWcRM_400x400.jpg" class="card-img-top" alt="book" height="350px" width="450px">
+    <div class="card-body">
+      <p class="card-text"><b> Kazuo Ishiguro OBE FRSA FRSL</b>(8 November 1954 (age 67 years) Nagasaki, Nagasaki, Japan) is an English novelist, screenwriter, musician, and short-story writer.</p>
+    </div>
+  </div>
+
+  <!-- genres -->
+<div class="hove">
+  <h1  style="position: absolute; top: 1990px;font-size: 50px;font-family: 'Times New Roman', Times, serif;"  id="genres">Genres</h1>
+  <div style="position: absolute; top: 2050px;left: 20px; width: 300px; height: 300px;" class="hov">
+    <img src="https://i0.wp.com/danielle-adams.com/wp-content/uploads/2018/03/fantasy_world.jpg?fit=1140%2C500&ssl=1" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fantasy</h4>
+  </div>
+
+  <div style="position: absolute; top: 2050px;left: 260px; width: 300px; height: 300px;"class="hov">
+    <img src="https://bookstr.com/wp-content/uploads/2017/04/hist.jpg" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>Historical Fiction</h4>
+  </div>
+
+  <div style="position: absolute; top: 2050px;left: 500px; width: 300px; height: 300px;"class="hov">
+    <img src="https://thehowler.org/wp-content/uploads/2021/05/Romance-Hate.png" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;Romance novel</h4>
+  </div>
+
+  <div style="position: absolute; top: 2050px;left: 750px; width: 300px; height: 300px;"class="hov">
+    <img src="https://storygrid.com/wp-content/uploads/2022/05/Copy-of-Love-Genre-1-1024x1024.png" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thriller</h4>
+  </div>
+
+  <div style="position: absolute; top: 2050px;left: 1000px; width: 300px; height: 300px;"class="hov">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTllNErvSdX1ooLMiMU_bfPNar6JJHiaX9EQd_PCt2__oLzffFDfsGLoXy1AdD16t1X98o&usqp=CAU" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;Adventure fiction</h4>
+  </div>
+
+  <div style="position: absolute; top: 2050px;left: 1250px; width: 300px; height: 300px;"class="hov">
+    <img src="data:image/jpeg;base64,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" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Humor</h4>
+  </div>
+
+
+  <div style="position: absolute; top: 2350px;left: 20px; width: 300px; height: 300px;"class="hov">
+    <img src="data:image/jpeg;base64,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" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spirituality</h4>
+  </div>
+
+  <div style="position: absolute; top: 2350px;left: 260px; width: 300px; height: 300px;"class="hov">
+    <img src="https://culturedvultures.com/wp-content/uploads/2021/07/The-TOmorrow-War-1.jpg" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;Action Fiction</h4>
+  </div>
+
+  <div style="position: absolute; top: 2350px;left: 500px; width: 300px; height: 300px;" class="hov">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtKc3KuTjIaBVlHSjfJElswQ65kNUKVvT2zis5LX4N_XTVsTxr3AIhRgggr-goO6n2OI&usqp=CAU" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crime</h4>
+  </div>
+
+  <div style="position: absolute; top: 2350px;left: 750px; width: 300px; height: 300px;" class="hov">
+    <img src="https://i.pinimg.com/originals/e9/12/c3/e912c319ccecb5b0ed9ef47d82aa3a7b.jpg" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;Magical Realism</h4>
+  </div>
+
+  <div style="position: absolute; top: 2350px;left: 1000px; width: 300px; height: 300px;" class="hov">
+    <img src="https://static.toiimg.com/thumb/68595406.cms?width=400&height=300&resizemode=4&imgsize=389287" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Classics</h4>
+  </div>
+
+  <div style="position: absolute; top: 2350px;left: 1250px; width: 300px; height: 300px;" class="hov">
+    <img src="https://images.vexels.com/media/users/3/169937/raw/89aeaa91660e7dd77e3827d961930e55-drama-subject-illustration.jpg" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Drama</h4>
+  </div>
+
+
+  <div style="position: absolute; top: 2650px;left: 20px; width: 300px; height: 300px;" class="hov">
+    <img src="https://img.freepik.com/free-vector/watercolor-poetry-illustration_52683-81537.jpg?w=2000" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poetry</h4>
+  </div>
+
+  <div style="position: absolute; top: 2650px;left: 260px; width: 300px; height: 300px;" class="hov">
+    <img src="https://t3.ftcdn.net/jpg/01/12/67/74/360_F_112677470_d55B8wKuQersdVzG5EyibtQEKCHYdVo7.jpg" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;Autobiography</h4>
+  </div>
+
+  <div style="position: absolute; top: 2650px;left: 500px; width: 300px; height: 300px;" class="hov">
+    <img src="https://miro.medium.com/max/1400/1*nB4yvJ38U8hqYudh1iSVIg.jpeg" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Satire</h4>
+  </div>
+
+  <div style="position: absolute; top: 2650px;left: 750px; width: 300px; height: 300px;" class="hov">
+    <img src="https://i.pinimg.com/236x/e2/d6/7e/e2d67e17a37d24f4ed34aa282128fb9f--role-playing-games-tabletop-games.jpg" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;Space opera</h4>
+  </div>
+
+  <div style="position: absolute; top: 2650px;left: 1000px; width: 300px; height: 300px;" class="hov">
+    <img src="https://api.ndla.no/image-api/raw/id/23569" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Politics</h4>
+  </div>
+
+  <div style="position: absolute; top: 2650px;left: 1250px; width: 300px; height: 300px;" class="hov">
+    <img src="https://static.theprint.in/wp-content/uploads/2019/11/science.jpg" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Science</h4>
+  </div>
+
+  
+  
+
+ </div>
+
+ <!-- about us -->
+
+  <h1 style="position: absolute; top:2950px;font-size: 50px;font-family: 'Times New Roman', Times, serif;" id="aboutus">About us</h1>
+  
+    <!-- <div class="container" style="position:absolute; top: 3000px; height: 700px; width: 100%;background-image: linear-gradient(to right, black , grey);">
+    <img src="https://img.jakpost.net/c/2019/03/02/2019_03_02_66706_1551461528._large.jpg" alt="about us" height="650px" width="1200px" style=" padding-left: 400px; padding-top: 70px;" />
+    <div class="top-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aspernatur itaque suscipit voluptatem fugit ea accusamus, cum recusandae iure ab nisi ad ipsum alias ullam eligendi omnis doloremque odio culpa.</div>
+   </div> -->
+   <div class="container">
+    <div class="bb">
+    <img src="https://img.jakpost.net/c/2019/03/02/2019_03_02_66706_1551461528._large.jpg" alt="book" height="700px" width="800px" style="padding-top:100px;">
+    </div>
+    <div class="top-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni<br> quasi eligendi veritatis, alias quam! Sed voluptatem laboriosae<br> Numquam praesentium eveniet culpa fugiat delectus. Inventor<br>cto obcaecati iste delenitiLorem ipsum dolor sit amet consecte<br>icing elit. Magni itaque quasi eligendi veritatis, alias quam! Sed<br>atem laboriosam officiis. Numquam praesentium eveniet culpa<br> Inventore archite cto obcaecati iste delenitiLorem ipsum dolore<br>amet consectetur adipisicing elit. Magni itaque quasi eligendi v<br> quam! Sed voluptatem laboriosam officiis. Numquam praesenti<br> culpa fugiat delectus. Inventore architecto obcaecati iste deleni.</div>
+    
+  </div>
+
+  <!-- footer -->
+  <!-- <h1 style="position: absolute; top:3850px; ">Footer</h1> -->
+  <div class="foot" >
+     
+    <img style="padding-top: 40px;padding-left: 20px;" src="https://itbooksolutions.com/wp-content/uploads/2021/11/e-book-library-concept-laptop-computer-stack-books-wooden-table-72893651.jpg" width="700px" height="370px"/>
+     <div style="display:flex;">
+    <h1 style="padding-top: 50px;padding-left: 60px; font-weight: bolder;font-size: 90px;">BOOKS TO <br>EXPLORE</h1>
+    <div style="display:flex;padding-top:300px;">
+      <p >Contact us:<br>8284986221</p> &nbsp; &nbsp; &nbsp;
+      <br>
+      <p>Email Id:<br><a href="#">ebookstore@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
