@@ -30,6 +30,7 @@
       /* border:1px solid red; */
       display: flex;
       overflow-x: auto;
+
     }
 
     .wrapper::-webkit-scrollbar {
@@ -85,10 +86,18 @@
 .oo:hover{
  color: brown;
 }
+
+.authorss{
+  background-color: red;
+}
   </style>
 </head>
 
-<body>
+<body style="background: rgb(220,226,225);
+background: linear-gradient(0deg, rgba(220,226,225,1) 0%, rgba(158,191,236,1) 100%) ;
+background-attachment: fixed; height: 100%;
+;
+">
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -162,8 +171,10 @@
   <br>
   <!-- top 10 -->
   <div class="dec">
-    <h1 >Top 10 Books Around The Globe</h1>
+    <h1 style="font-weight: 5px; font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; font-size: 30px; text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; " > Top 10 Books Around The Globe</h1>
   </div>
+  <br>
   <div class="wrapper">
     <img src="book1.jpeg" alt="books" height="300px" width="300px">
     <img src="book2.jpeg" alt="books" height="300px" width="300px">
@@ -176,11 +187,17 @@
     <img src="book9.jpeg" alt="books" height="300px" width="300px">
     <img src="book10.jpeg" alt="books" height="300px" width="300px">
 
-  </div>
+  </div><br>
 
   <!-- authors -->
-  <h1 style="font-size: 50px;font-family: 'Times New Roman', Times, serif;">Best Selling Authors</h1>
+  <h1 style="font-weight: 5px; font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; font-size: 30px;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;">Best Selling Authors</h1>
   <br></br>
+
+  <div class ="authorss" style="display:block ;">
+
+
   <div class="card" style="width: 18rem; position: absolute; left:20px;" id="authors">
     <img src="author1.jpeg" class="card-img-top" alt="book" height="350px" width="450px">
     <div class="card-body">
@@ -243,9 +260,18 @@
     </div>
   </div>
 
+
+  </div>
+
   <!-- genres -->
-<div class="hove">
-  <h1  style="position: absolute; top: 1990px;font-size: 50px;font-family: 'Times New Roman', Times, serif;"  id="genres">Genres</h1>
+
+<h3 style=" position: absolute; top:2000px;">Genres</h3>
+<br><br>
+
+  <div >
+<div class="hove" style="display:block;">
+  <h1  style="font-weight: 5px; font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; font-size: 30px;
+  ">Genres</h1>
   <div style="position: absolute; top: 2050px;left: 20px; width: 300px; height: 300px;" class="hov">
     <img src="https://i0.wp.com/danielle-adams.com/wp-content/uploads/2018/03/fantasy_world.jpg?fit=1140%2C500&ssl=1" height="200px" width="200px" style="border-radius: 50%;"  alt="genere"/>
     <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fantasy</h4>
@@ -342,6 +368,7 @@
   
 
  </div>
+  </div>
 
  <!-- about us -->
 
