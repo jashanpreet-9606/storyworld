@@ -1,0 +1,54 @@
+
+.App{
+
+  text-align: center;
+
+ 
+  
+}
+body {
+  background-color: #282c34;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+}
+p{
+  font-size: large;
+  line-height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+}
+
+/* .blogcard{
+    margin:16px;
+      padding: 16px;
+     border: 4px solid greenyellow;
+  
+}
+.BlogCard{
+    margin:16px;
+      padding: 16px;
+     border: 2px solid green;
+  
+}
+.jashan2{
+    margin:16px;
+      padding: 16px;
+     border: 2px solid yellow;
+  
+}
+
+.BlogStyle{
+
+  margin: 16px;
+
+  padding: 16px;
+
+  border-radius: 7px;
+
+  box-shadow: 0 2px 5px rgb(129, 10, 16);
+
+  box-sizing: border-box;
+
+ } */
